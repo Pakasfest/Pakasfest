@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAKASFEST</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<nav>
+   <div class="menu-container">
+    <div class="logo">PAKASFEST</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  <a href="#sobre">Sobre</a>
+  <a href="#ingressos">Ingressos</a>
+  <a href="#quero-parceiro">Quero ser parceiro</a>
+  <a href="#regulamento">Regulamento</a>
+  <a href="#redessociais">Fale Conosco</a>
+</nav>
+
+<header>
+  <h1>PAKASFEST</h1>
+  <p>A festa mais insana do ano!</p>
+  <div id="countdown">
+    <div class="time-box"><span id="dias">0</span><small>Dias</small></div>
+    <div class="time-box"><span id="horas">0</span><small>Horas</small></div>
+    <div class="time-box"><span id="minutos">0</span><small>Minutos</small></div>
+    <div class="time-box"><span id="segundos">0</span><small>Segundos</small></div>
+  </div>
+  <!-- Selo animado Open Bar -->
+<div class="selo-openbar">
+   OPEN BAR 🍺
+
+</div>
+
+</header>
+</header>
+
+<!-- Onda de transição fluida entre sessões com HSLA -->
+<svg class="wave-tinta-transicao" viewBox="0 0 1440 200" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="waveGradientHSLA" x1="0%" y1="0%" x2="0%" y2="100%">
+      <!-- cores invertidas: começa pelo amarelo -->
+      <stop offset="0%" stop-color="#ffe680"/>                   <!-- amarelo claro -->
+      <stop offset="60%" stop-color="#ffb3ff"/>                  <!-- rosa suave -->
+      <!-- degradê do vinho translúcido no final -->
+      <stop offset="90%" stop-color="hsla(325, 95%, 18%, 0.6)"/>  <!-- vinho mais claro -->
+      <stop offset="100%" stop-color="hsla(325, 95%, 12%, 0.7)"/>  <!-- vinho médio -->
+      <stop offset="100%" stop-color="hsla(325, 95%, 8%, 0.8)"/>  <!-- vinho mais escuro -->
+    </linearGradient>
+  </defs>
+
+  <path d="M0,140 
+           C180,180 360,100 540,150 
+           C720,190 900,120 1080,160 
+           C1260,200 1440,140 1440,140 
+           L1440,200 L0,200 Z" fill="url(#waveGradientHSLA)"/>
+</svg>
+
+
+
+
+
+
+
+<section id="sobre">
+
+
+<section id="sobre" style="position: relative; padding: 40px; background: rgba(72, 0, 72, 0.05); color: #fff; font-family: 'Arial Black', sans-serif; text-align: center; border-radius: 20px;">
+
+  <h2 style="font-size: 3em; color: #fff; text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;">🔥 Sobre o PAKASFEST</h2>
+
+  <p style="font-size: 1.5em; margin: 20px 0; text-shadow: 0 0 5px #00ffff;">Prepare-se para viver a festa mais insana e divertida do ano!</p>
+
+  <p style="font-size: 1.3em; margin: 15px 0; color: #ff69b4; font-weight: bold; text-shadow: 0 0 5px #0e080b;">🍻 Open Bar: cerveja, água e refrigerante à vontade!</p>
+
+  <p style="font-size: 1.3em; margin: 15px 0; color: #00ffff; font-weight: bold; text-shadow: 0 0 5px #000a0a;">📸 Fotógrafo profissional para registrar cada momento incrível!</p>
+
+  <p style="font-size: 1.3em; margin: 15px 0; color: #ffdd00; font-weight: bold; text-shadow: 0 0 5px #000000;">📍 Local instagramável, perfeito para fotos e stories!</p>
+
+  <p style="font-size: 1.3em; margin: 15px 0; color: #ff4500; font-weight: bold; text-shadow: 0 0 5px #030100;">🥤 Produtos personalizados: copos exclusivos e muito mais!</p>
+
+  <!-- Botão para produtos personalizados -->
+  <a href="https://link-dos-produtos-personalizados.com" target="_blank" 
+     style="display: inline-block; margin: 10px 10px 20px 10px; padding: 12px 25px; font-size: 1.1em; font-weight: bold; color: #f3f2f2; background: linear-gradient(45deg, #ff00ff, #00ffff); border: none; border-radius: 12px; box-shadow: 0 0 10px #ff00ff, 0 0 15px #00ffff; text-decoration: none; transition: all 0.3s ease;">
+    🎁 Veja os Produtos Personalizados
+  </a>
+
+  <!-- Botão para localização -->
+  <button class="localizacao-btn" onclick="abrirLocalizacao()" 
+     style="display: inline-block; margin: 10px 10px 0 10px; padding: 12px 25px; font-size: 1.1em; font-weight: bold; color: #fff; background: linear-gradient(45deg, #000a06, #ff00b3); border: none; border-radius: 12px; box-shadow: 0 0 10px #00ff99, 0 0 15px #00ffff; cursor: pointer; transition: all 0.3s ease;">
+    📍 Ver localização no mapa
+  </button>
+
+  <script>
+    function abrirLocalizacao() {
+      window.open('https://share.google/UAtSBZXQpdVTdS9Wa', '_blank');
+    }
+  </script>
+
+</section>
+
+
+<div class="divider"></div>
+
+<section id="ingressos">
+  <h2>🎟️ Ingressos</h2>
+
+  <div class="ticket individual" data-lote="200" data-vendidos="75">
+    <h3>Ingresso Individual 1° lote</h3>
+    <p>R$ 50,00</p>
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+    <button onclick="comprar()">Comprar</button>
+  </div>
+
+  <div class="ticket casadinha" data-lote="100" data-vendidos="40">
+    <h3>Combo Casadinha 1° lote</h3>
+    <p>R$ 90,00</p>
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+    <button onclick="comprar()">Comprar</button>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="quero-parceiro" class="parceiro-neon">
+  <h2>🤝 Seja Parceiro do PAKASFEST!</h2>
+
+  <p>O PAKASFEST não é apenas uma festa… Faça sua marca brilhar na festa mais insana do ano! 🎉</p>
+
+  <p>Quer que sua marca seja vista, lembrada e comentada por milhares de pessoas animadas? Então venha fazer parte do nosso time de parceiros!</p>
+
+  <h3>Ao se tornar parceiro, você terá:</h3>
+  <ul>
+    <li>✨ Exposição VIP da sua marca em todos os canais do evento</li>
+    <li>✨ Acesso direto ao nosso público animado e engajado</li>
+    <li>✨ Oportunidade de ações promocionais, brindes e ativações exclusivas</li>
+    <li>✨ Networking e visibilidade com marcas e pessoas influentes no cenário de festas</li>
+  </ul>
+
+  <div class="botoes-parceiro">
+    <a href="mailto:pakasfesteventos@gmail.com" class="btn-parceiro">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="https://wa.me/559999999999" target="_blank" class="btn-parceiro">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+  </div>
+
+  <p class="info-extra">Para mais informações, entre em contato!</p>
+</section>
+
+
+<!-- Adicione isso no seu <head> para carregar os ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+<div class="divider"></div>
+
+<section id="regulamento">
+  <h2 class="regulamento-titulo">📜 Regulamento</h2>
+  
+  <p class="regulamento-subtitulo">📌 Antes do evento:</p>
+  <ul class="regulamento-lista">
+    <li>🎟️ Todos os ingressos são nominais e intransferíveis.</li>
+    <li>💳 Compras somente através de canais oficiais (ex: Sympla).</li>
+    <li>❌ Não nos responsabilizamos por ingressos adquiridos fora dos canais oficiais.</li>
+  </ul>
+  
+  <p class="regulamento-subtitulo">📌 Durante o evento:</p>
+  <ul class="regulamento-lista">
+    <li>🍹 É proibida a entrada de bebidas externas.</li>
+    <li>🚫 É proibido portar drogas ilícitas ou objetos cortantes.</li>
+    <li>🔞 Menores de 18 anos não podem consumir bebidas alcoólicas.</li>
+    <li>🤝 Respeite os outros participantes; comportamentos agressivos serão punidos.</li>
+    <li>📱 Organize seus pertences; não nos responsabilizamos por perdas ou furtos.</li>
+  </ul>
+  
+  <p class="regulamento-subtitulo">📌 Pós-evento / Devoluções:</p>
+  <ul class="regulamento-lista">
+    <li>💸 Ingressos não são reembolsáveis, exceto em caso de cancelamento do evento.</li>
+    <li>📢 Mudanças de datas ou locais serão comunicadas com antecedência.</li>
+    <li>📄 É obrigatório apresentar documento de identidade junto com o ingresso.</li>
+  </ul>
+  
+  <a href="📜 Regulamento Oficial do PAKASFEST.pdf" download class="download-btn">📥 Baixar Regulamento Completo</a>
+</section>
+
+<div class="divider"></div>
+
+
+<footer id="redessociais">
+  <div>
+    <p class="textofooter">Fale conosco</p>
+  </div>
+  <div class="redessociais" style="display: flex; gap: 15px;">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/559999999999" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
+        <i class="fab fa-whatsapp" style="font-size: 24px; color:#25D366;"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/pakasfest" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
+        <i class="fab fa-instagram" style="font-size: 24px; color:#C13584;"></i>
+    </a>
+
+    <!-- Email -->
+    <a href="pakasfesteventos@gmail.com" style="display: inline-block;">
+        <i class="fas fa-envelope" style="font-size: 24px; color:#EA4335;"></i>
+    </a>
+  </div>
+  <div>
+    <p>© 2025 Meu Site - Todos os direitos reservados</p>
+  </div>
+</footer>
+
+
+<script>
+
+// Contagem regressiva
+const evento=new Date("December 15, 2025 20:00:00").getTime();
+function atualizarContagem(){
+  const agora=new Date().getTime();
+  const distancia=evento-agora;
+  if(distancia<0){
+    document.getElementById('dias').innerText=0;
+    document.getElementById('horas').innerText=0;
+    document.getElementById('minutos').innerText=0;
+    document.getElementById('segundos').innerText=0;
+    return;
+  }
+  const dias=Math.floor(distancia/(1000*60*60*24));
+  const horas=Math.floor((distancia%(1000*60*60*24))/(1000*60*60));
+  const minutos=Math.floor((distancia%(1000*60*60))/(1000*60));
+  const segundos=Math.floor((distancia%(1000*60))/1000);
+  document.getElementById('dias').innerText=dias;
+  document.getElementById('horas').innerText=horas;
+  document.getElementById('minutos').innerText=minutos;
+  document.getElementById('segundos').innerText=segundos;
+}
+setInterval(atualizarContagem,1000);
+atualizarContagem();
+
+function atualizarBarrasIngressos(){
+  const tickets = document.querySelectorAll('.ticket');
+  tickets.forEach(ticket => {
+    const lote = parseInt(ticket.dataset.lote);
+    const vendidos = parseInt(ticket.dataset.vendidos);
+    const porcentagem = Math.min(100, Math.floor((vendidos/lote)*100));
+    ticket.querySelector('.progress-fill').style.width = porcentagem + '%';
+  });
+}
+
+atualizarBarrasIngressos(); // chama a função ao carregar
+// Função para redirecionar para Sympla
+function comprar() {
+  window.location.href = 'https://www.sympla.com.br/';
+}
+
+</script>
+
+</body>
+</html>
+
